@@ -1,0 +1,21 @@
+.about {
+    margin: 0 auto;
+    max-width: 1250px;
+    .banner-about {
+        width: 100%;
+        height: 225px;
+        border-radius: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: var(--primary-1);
+        position: relative;
+        img {
+            filter: brightness(.7);
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            border-radius: 25px;
+        }
+    }
+}

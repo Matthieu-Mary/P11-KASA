@@ -1,4 +1,4 @@
-import Banner from "./Banner";
+import Banner from "./BannerHome";
 import CardsList from "./CardsList";
 
 

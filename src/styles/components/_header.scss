@@ -13,5 +13,8 @@ header {
         &:nth-child(1) {
             margin-right: 57px;
         }
+        &.active {
+            border-bottom: 2px solid var(--primary-1);
+        }
     }
 }
