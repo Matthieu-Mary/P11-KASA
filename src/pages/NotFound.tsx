@@ -1,5 +1,9 @@
 export default function NotFound() {
   return (
-    <div>404</div>
+    <main className="not-found">
+      <h1>404</h1>
+      <h2>Oups! La page que vous demandez n'existe pas.</h2>
+      <a href="/">Retourner sur la page d'accueil</a>
+    </main>
   )
 }
