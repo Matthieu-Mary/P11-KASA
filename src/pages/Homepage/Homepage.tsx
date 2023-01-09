@@ -1,13 +1,15 @@
 import Banner from "./Banner";
-import Card from "./Card";
+import CardsList from "./CardsList";
+
 
 export default function Homepage() {
+
   return (
-    <div className="home">
+    <main className="home">
       <Banner />
       <section className="cards-container">
-        <Card />
+       <CardsList />
       </section>
-    </div>
-  )
+    </main>
+  );
 }
