@@ -1,12 +1,12 @@
-import Card from "./Card"
+import { Card } from "./Card"
 import data from "../../data/data.json"
 
 export default function CardsList() {
   return (
-    <div>
-        {
-            
-        }
-    </div>
+    <>
+        {data.map((card:any) => (
+            <Card key={card.key} title={card.title} cover={card.cover} />
+        ))}
+    </>
   )
 }

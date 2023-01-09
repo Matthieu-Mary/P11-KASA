@@ -1,6 +1,13 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    max-width: 1240px;
+    max-width: 1440px;
     margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;;
 }
 
 ul {
