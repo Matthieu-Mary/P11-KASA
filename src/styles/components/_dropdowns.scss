@@ -1,5 +1,7 @@
 .dropdown {
+    margin-top: 2rem;
     .dropdown-title {
+        cursor: pointer;
         color: white;
         background-color: var(--primary-1);
         display: flex;
@@ -17,8 +19,15 @@
         img {
             width: 24px;
             font-weight: bold;
+            transform: rotate(180deg);
+        }
+        &.opened {
+            img {
+                transform: rotate(0deg);
+            }
         }
     }
+    
     .dropdown-infos {
         width: 80%;
         margin: 0 auto;

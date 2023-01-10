@@ -1,7 +1,5 @@
 import Logo from "../assets/images/LOGOFOOTER.svg";
 
-console.log(Logo)
-
 export default function Footer() {
   return (
     <footer>
