@@ -13,6 +13,12 @@
         flex-direction: column;
         .infos-host {
             display: flex;
+            align-items: center;
+            img {
+                width: 64px;
+                height: 64px;
+                border-radius: 50%;
+            }
         }
     }
 }

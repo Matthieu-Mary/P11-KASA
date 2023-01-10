@@ -27,7 +27,7 @@ export const Apartment = () => {
                     <img src={rightApartment.host.picture} alt={`${rightApartment.host.name} profil picture`} />
                 </div>
                 <div className="stars">
-                    <Star />
+                    {[1,2,3,4,5].map(star => <Star key={star}/>)}
                 </div>
             </div>
         </div>
