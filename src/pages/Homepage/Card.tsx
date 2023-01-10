@@ -1,13 +1,14 @@
 type CardPropsType = {
+  key: string,
   title: string;
   cover: string;
 };
 
-export const Card: React.FC<CardPropsType> = ({ title, cover }) => {
+export const Card: React.FC<CardPropsType> = ({ key, title, cover }) => {
   return (
     <article className="card">
       <img src={cover} />
-      <a>
+      <a >
         <h3>{title}</h3>
       </a>
     </article>
