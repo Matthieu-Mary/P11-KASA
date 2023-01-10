@@ -3,6 +3,7 @@ import App from '../App';
 import Homepage from '../pages/Homepage/Homepage';
 import About from '../pages/About/About';
 import NotFound from '../pages/NotFound';
+import { Apartment } from '../pages/Homepage/Apartment';
 
 export const router = createBrowserRouter([
   {
@@ -11,7 +12,11 @@ export const router = createBrowserRouter([
     children: [
       {
         path: '/',
-        element: <Homepage />,
+        element: <Homepage />
+      },
+      {
+        path: "/apartment/:id",
+        element: <Apartment />
       },
       {
         path: '/about',

@@ -1,0 +1,18 @@
+.apartment {
+    margin: 0 auto;
+    max-width: 1250px;
+    color: var(--primary-1);
+
+    .container-apartment-infos {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .host {
+        display: flex;
+        flex-direction: column;
+        .infos-host {
+            display: flex;
+        }
+    }
+}

@@ -1,16 +1,19 @@
+import { Link } from "react-router-dom";
+
 type CardPropsType = {
   key: string,
-  title: string;
-  cover: string;
+  id: string,
+  title: string,
+  cover: string,
 };
 
-export const Card: React.FC<CardPropsType> = ({ key, title, cover }) => {
+export const Card: React.FC<CardPropsType> = ({ id, title, cover }) => {
   return (
     <article className="card">
       <img src={cover} />
-      <a >
+      <Link className="link" to={`/apartment/${id}`}>
         <h3>{title}</h3>
-      </a>
+      </Link>
     </article>
   );
 };
