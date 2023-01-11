@@ -55,6 +55,10 @@
             margin-top: 1rem;
             .star {
                 margin-right: 5px;
+                color: aqua;
+                &.colorized {
+                    color: red;
+                }
             }
         }
     }
