@@ -20,7 +20,7 @@ export const DropdownList: React.FC<InfosPropsType> = ({ title, equipments }) =>
       {isOpen ? (
         <div className="dropdown-infos">
           <ul>
-            {equipments.map(equipment => <li>{equipment}</li>)}
+            {equipments.map((equipment, index) => <li key={index} >{equipment}</li>)}
           </ul>
         </div>
       ) : null}
