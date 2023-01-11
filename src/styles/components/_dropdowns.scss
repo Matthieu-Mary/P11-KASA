@@ -58,7 +58,13 @@
       width: 100%;
       p {
         font-size: 1rem;
-        line-height: 20px;
+        line-height: 22px;
+      }
+      ul {
+        li{
+          font-size: 1rem;
+          line-height: 22px;
+        }
       }
     }
   }
