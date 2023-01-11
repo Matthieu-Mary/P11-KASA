@@ -18,7 +18,7 @@
             font-weight: 500;
         }
         .container-tags {
-            margin-top: 1.25rem;
+            margin: 1.5rem 0;
             .tag {
                 margin-right: 10px;
                 background-color: var(--primary-1);
@@ -37,6 +37,12 @@
         .infos-host {
             display: flex;
             align-items: center;
+            justify-content: flex-end;
+            p {
+                text-align: right;
+                font-size: 18px;
+                margin-right: 10px;
+            }
             img {
                 width: 64px;
                 height: 64px;
@@ -44,10 +50,28 @@
             }
         }
         .stars {
-                .colorized {
-                    fill: blue;
-                    background-color: red;
-                }
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 1rem;
+            .star {
+                margin-right: 5px;
+            }
+        }
+    }
+    .dropdown-container {
+        display: flex;
+        justify-content: space-between;
+        .dropdown {
+            width: 47.5%;
+            margin-bottom: 1rem;
+            .dropdown-title {
+                width: 100%;
+            }
+            .dropdown-infos {
+                display: flex;
+                align-items: center;
+                width: 100%;
+            }
         }
     }
 }

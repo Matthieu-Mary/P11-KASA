@@ -39,5 +39,12 @@
             padding: 1rem;
             color: var(--primary-1);
         }
+        ul {
+            padding: 2rem 1rem;
+            li {
+                font-size: 24px;
+                line-height: 35px;
+            }
+        }
     }
 }

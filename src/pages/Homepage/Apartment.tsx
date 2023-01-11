@@ -3,6 +3,8 @@ import { Carousel } from "../../components/Carousel";
 import data from "../../data/data.json";
 import { Tag } from "../../components/Tag";
 import starImg from "../../assets/images/star.svg";
+import { Dropdown } from "../../components/Dropdown";
+import { DropdownList } from "../../components/DropdownList";
 
 export const Apartment = () => {
   const { id } = useParams();
@@ -23,7 +25,7 @@ export const Apartment = () => {
         </div>
         <div className="host">
           <div className="infos-host">
-            <p>{rightApartment.host.name}</p>
+            <p>{rightApartment.host.name.split(" ")[0]} <br /> {rightApartment.host.name.split(" ")[1]} </p>
             <img
               src={rightApartment.host.picture}
               alt={`${rightApartment.host.name} profil picture`}
@@ -32,13 +34,17 @@ export const Apartment = () => {
           <div className="stars">
             {[1, 2, 3, 4, 5].map((star) => (
               <img
-                className={star <= rightApartment.rating ? "colorized" : ""}
+                className={star <= rightApartment.rating ? "star colorized" : "star none"}
                 src={starImg}
                 alt="star"
               />
             ))}
           </div>
         </div>
+      </div>
+      <div className="dropdown-container">
+        <Dropdown title="Description" content={rightApartment.description}/>
+        <DropdownList title="Equipements" equipments={rightApartment.equipments}/>
       </div>
     </main>
   );
