@@ -1,7 +1,7 @@
 {
   "name": "p11-kasa",
   "private": true,
-  "homepage": "https://matthieu-mary.github.io/",
+  "homepage": "https://matthieu-mary.github.io/P11-KASA/",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
