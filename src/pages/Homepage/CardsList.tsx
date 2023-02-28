@@ -1,6 +1,5 @@
 import { Card } from "./Card"
 import data from "../../data/data.json"
-import { useState } from "react"
 
 export default function CardsList() {
   return (
